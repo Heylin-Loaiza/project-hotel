@@ -1,0 +1,37 @@
+@use "colors";
+
+body {
+  font-family: 'Rubik';  //  BORRAR REGLAS  //
+  font-size: 16px;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.hotel-form .hotel-form__container:nth-child(even) {
+  margin: 20px 0;
+}
+
+.hotel-form__container label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: blue;        // CAMBIAR POR PARTIAL //
+}
+
+.hotel-form__container input {
+  min-width: 300px;
+  height: 22px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.hotel-form__container textarea {
+  min-width: 300px;
+  height: 120px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  margin-top: 3px;
+}
