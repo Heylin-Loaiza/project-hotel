@@ -66,6 +66,12 @@
   left: 0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Rubik";
   font-size: 16px;
@@ -73,35 +79,78 @@ body {
 
 form {
   margin: 0 auto;
+  padding: 0 10px;
+  max-width: 550px;
 }
 
 .hotel-form .hotel-form__container:nth-child(even) {
   margin: 20px 0;
 }
 
+.hotel-form__container {
+  width: 100%;
+}
+
 .hotel-form__container label {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  color: blue;
 }
 
 .hotel-form__container input {
-  min-width: 300px;
-  height: 22px;
+  width: 100%;
+  height: 35px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   margin-top: 3px;
 }
 
 .hotel-form__container textarea {
-  min-width: 300px;
+  width: 100%;
   height: 120px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   margin-top: 3px;
 }
 
+@media (min-width: 768px) {
+  form {
+    max-width: 800px;
+  }
+  .div-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hotel-form .div-flex:nth-child(2) {
+    margin: 20px 0;
+  }
+  .hotel-form .hotel-form__container:nth-child(even) {
+    margin: 0;
+  }
+  .div-flex .hotel-form__container {
+    width: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  form {
+    max-width: 800px;
+  }
+  .div-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hotel-form .div-flex:nth-child(2) {
+    margin: 20px 0;
+  }
+  .hotel-form .hotel-form__container:nth-child(even) {
+    margin: 0;
+  }
+  .div-flex .hotel-form__container {
+    width: 48%;
+  }
+}
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
