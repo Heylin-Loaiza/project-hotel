@@ -1,3 +1,5 @@
+@use './colors';
+
 .card__container {
   list-style: none;
 }
@@ -5,7 +7,7 @@
 .card {
   width: 300px;
   min-height: 200px;
-  border: 1px solid gray;
+  border: 1px solid colors.$gray;
   box-shadow: 10px 10px #f9f9f9;
   border-radius: 10px;
   position: relative;
@@ -34,18 +36,12 @@
 }
  
 .card__info__description {
-  color: black;
   font-size: 12px;
 }
  
 .card__info__name {
   margin: 0;
   font-size: 20px;
-  color: black;
-}
- 
-.card__info__category {
-  color: black;
 }
  
 .card__cta {
