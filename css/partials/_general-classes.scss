@@ -31,3 +31,25 @@ ul {
 a {
   text-decoration: none;
 }
+
+// Javascript Btn Styles //
+
+.js-hidden {
+  display: none;
+  animation: fadeOut 0.5s;
+}
+
+.js-visible {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
