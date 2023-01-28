@@ -3,44 +3,52 @@
 
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: colors.$gray;
   padding: 10px;
-  height: 70px;
   margin-bottom: 50px;
 }
 
-.header__searchbar {
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+.header-wrapper__searchbar {
   height: 25px;
   width: 55%;
   display: flex;
   gap: 3px;
 }
 
-.header__searchbar-input {
+.header-wrapper__searchbar-input {
   width: 100%;
   padding: 5px;
 }
 
-.header__searchbar-icon {
+.header-wrapper__searchbar-icon {
   color: colors.$gray;
   font-weight: 700;
   padding: 5px;
 }
 
-.header__register {
+.header-wrapper__register {
   display: flex;
   gap: 10px;
 }
 
-.header__register a {
+.header-wrapper__register a {
   color: colors.$white;
 }
 
 @media (min-width:768px) {
-  .header__register {
+  .header-wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .header-wrapper__register {
     gap: 20px;
   }
 }

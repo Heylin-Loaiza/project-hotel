@@ -1,11 +1,8 @@
 @use './general-classes';
 @use './colors';
 
-.footer__nav {
-  color:colors.$white;
-  }
-
 footer {
+  margin-top: 50px;
   width: 100%;
   color:colors.$white;
   background-color:colors.$gray;
@@ -13,7 +10,7 @@ footer {
 
 .footer {
   max-width: 85%;
-  padding: 5% 0%;
+  padding: 45px 0 0 0 ;
   margin: 0 auto;
   }
 
@@ -22,12 +19,19 @@ footer {
   text-align: center;
 }
 
+.form-newsletter__container {
+  border-bottom: 1px solid colors.$white;
+}
+
 .form-newslatter__request {
+  max-width: 80%;
+  margin: 0 auto;
   border: none;
   padding: 10px 8px;
-  background-color: colors.$white;
-  color: colors.$gray;
+  background-color: colors.$gray;
+  color: colors.$white;
   font-weight: 700;
+  display: block;
 }
 
 .form-newslatter__request--description {
@@ -36,75 +40,99 @@ footer {
 }
 
 .form-newslatter__request--email {
+  background-color: colors.$white;
   margin-top: 10px;
-  max-width: 90%;
   text-align: center;
+  width: 100%;
   }
 
 .form-newslatter__request--submit {
   margin-top: 8px;
-  max-width: 85%;
+  text-decoration: underline;
+  cursor: pointer;
   }
 
 .footer__list { 
   text-align: center;
+  margin: 30px auto;
+  width: 150px;
 }
 
-.footer__list--container {
-  margin: 30px 0;
-}
+.footer__nav {
+  color:colors.$white;
+  }
 
 .footer__list--items {
   margin: 5px;
 }
 
+.footer__hover:hover {
+  opacity: .6;
+}
 
 .footer__list--title {
   margin-bottom: 5px;
 }
 
 .footer__bottom {
-  background-color: colors.$gray;
+  background-color: colors.$lightgray;
   display: flex;
-  justify-content:space-evenly;
+  justify-content:right;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px;
 }
 
-.footer__bottom--logo::before {
-  background-image: url('../../images/logo.png');
-  background-size: 70px 50px;
-  background-repeat: no-repeat;
-  display: inline-block;
+.footer__bottom--logo {
   width: 70px; 
   height: 50px;
-  content:"";
 }
 
 .footer__bottom-social {
   display: flex;
   align-items: center;
+  margin: 0 10px; 
 }
 
 .footer__bottom-social--whatsapp::before {
-  content: url(../../images/iconos/whatsapp.png);
+  content: url(./../images/iconos/whatsapp.png);
   margin-right: 5px;
 }
 
 .footer__bottom-social--facebook::before {
-  content: url(../../images/iconos/facebook.png);
+  content: url(./../images/iconos/facebook.png);
   margin-right: 5px;
 }
 
 .footer__bottom-social--instagram::before {
-  content: url(../../images/iconos/instagram.png);
+  content: url(./../images/iconos/instagram.png);
   margin-right: 5px;
 }
 
 .footer__bottom-social--twitter::before {
-  content: url(../../images/iconos/twitter.png);
+  content: url(./../images/iconos/twitter.png);
 }
 
-.footer__hover:hover {
-  opacity: .6;
+@media (min-width: 768px)  {
+  .footer {
+    padding: 35px 0 0 0 ;
+    }
+
+  .form-newslatter__request {
+    max-width: 75%;
+  }
+
+  .footer__politics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px)  {
+  .footer {
+    padding: 45px 0 0 0 ;
+    }
+  .form-newslatter__request {
+    max-width: 60%;
+  }
 }
