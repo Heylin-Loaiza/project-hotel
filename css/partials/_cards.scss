@@ -1,0 +1,77 @@
+@use './colors';
+
+.card__container {
+  list-style: none;
+}
+ 
+.card {
+  width: 300px;
+  min-height: 200px;
+  border: 1px solid colors.$gray;
+  box-shadow: 10px 10px #f9f9f9;
+  border-radius: 10px;
+  position: relative;
+  margin: 25px auto;
+}
+ 
+.card:hover {
+  transform: scale(1.1);
+}
+ 
+.card__wrapper {
+  position: relative;
+  z-index: 2;
+}
+ 
+.card__img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+}
+ 
+.card__info {
+  min-height: 100px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+ 
+.card__info__description {
+  font-size: 12px;
+}
+ 
+.card__info__name {
+  margin: 0;
+  font-size: 20px;
+}
+ 
+.card__cta {
+  display: flex;
+  cursor: pointer;
+}
+ 
+.card__cta::after {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (min-width:768px) {
+  .card__container {
+    display: flex;
+  }
+}
+
+@media (min-width:1024px) {
+  .card__container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .card {
+    width: 350px;
+  }
+}
