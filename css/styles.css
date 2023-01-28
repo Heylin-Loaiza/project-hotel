@@ -106,6 +106,7 @@ a {
 }
 
 footer {
+  margin-top: 50px;
   width: 100%;
   color: white;
   background-color: rgb(87, 87, 87);
@@ -196,27 +197,27 @@ footer {
 }
 
 .footer__bottom-social--whatsapp::before {
-  content: url(../../images/iconos/whatsapp.png);
+  content: url(./../images/iconos/whatsapp.png);
   margin-right: 5px;
 }
 
 .footer__bottom-social--facebook::before {
-  content: url(../../images/iconos/facebook.png);
+  content: url(./../images/iconos/facebook.png);
   margin-right: 5px;
 }
 
 .footer__bottom-social--instagram::before {
-  content: url(../../images/iconos/instagram.png);
+  content: url(./../images/iconos/instagram.png);
   margin-right: 5px;
 }
 
 .footer__bottom-social--twitter::before {
-  content: url(../../images/iconos/twitter.png);
+  content: url(./../images/iconos/twitter.png);
 }
 
 @media (min-width: 768px) {
   .footer {
-    padding: 60px 0 0 0;
+    padding: 35px 0 0 0;
   }
   .form-newslatter__request {
     max-width: 75%;
@@ -229,7 +230,7 @@ footer {
 }
 @media (min-width: 1024px) {
   .footer {
-    padding: 80px 0 0 0;
+    padding: 45px 0 0 0;
   }
   .form-newslatter__request {
     max-width: 60%;
