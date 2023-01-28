@@ -11,33 +11,41 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="contact-us">
-      <h2 class="contact-us-title">Contact Us</h2>
-      <form class="contact-us-form" action="">
-        <div class="contact-us-form__box">
-          <div class="contact-us-form__box-item">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Jose"/>
+    <div>
+      <div class="js-btn">
+        <button class="js-btn__details">Details</button>
+        <button class="js-btn__enquiry">Send enquiry</button>
+      </div>
+      <div class="hotel-description"></div>  <!-- aqui va la descripcion -->
+      <div class="contact-us js-hidden">
+        <h2 class="contact-us-title">Contact Us</h2>
+        <form class="contact-us-form" action="">
+          <div class="contact-us-form__box">
+            <div class="contact-us-form__box-item">
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" placeholder="Jose"/>
+            </div>
+            <div class="contact-us-form__box-item">
+              <label for="last-name">Apellidos</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Hernández"/>
+            </div>
           </div>
-          <div class="contact-us-form__box-item">
-            <label for="last-name">Apellidos</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Hernández"/>
+          <div class="contact-us-form__box">
+            <div class="contact-us-form__box-item">
+              <label for="telephone">Teléfono</label>
+              <input type="tel" name="telephone" id="telephone" placeholder="8888-8888"/>
+            </div>
+            <div class="contact-us-form__box-item">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" name="email" id="email" placeholder="jose@hernandez.com"/>
+            </div>
           </div>
-        </div>
-        <div class="contact-us-form__box">
-          <div class="contact-us-form__box-item">
-            <label for="telephone">Teléfono</label>
-            <input type="tel" name="telephone" id="telephone" placeholder="8888-8888"/>
-          </div>
-          <div class="contact-us-form__box-item">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" name="email" id="email" placeholder="jose@hernandez.com"/>
-          </div>
-        </div>
-        <label for="observation">Consulta</label>
-        <textarea name="observation" id="observation" cols="30" rows="10"></textarea>
-        <button class="contact-us-form__btn" type="submit">Enviar</button>
-      </form>
+          <label for="observation">Consulta</label>
+          <textarea name="observation" id="observation" cols="30" rows="10"></textarea>
+          <button class="contact-us-form__btn" type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
   </body>
+  <script src="../../../script/enquiry.js"></script>
 </html>
